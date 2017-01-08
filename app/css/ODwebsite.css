@@ -1,0 +1,178 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif; }
+
+h1 {
+  font-size: 1.7em;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 50px;
+  margin: 0 auto; }
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  background-color: red; }
+  #landing img {
+    width: 95px;
+    height: 65px;
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    -webkit-filter: drop-shadow(3px 4px 5px black);
+    -moz-filter: drop-shadow(3px 4px 5px black);
+    filter: drop-shadow(3px 4px 5px black); }
+  #landing #title {
+    position: absolute;
+    bottom: 3%;
+    left: 15%; }
+    #landing #title h1 {
+      margin-bottom: -35px;
+      font-size: 2.25em; }
+
+#about {
+  width: 100%;
+  background-color: #363636; }
+  #about #aboutContent {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 65px; }
+    #about #aboutContent h1 {
+      text-align: center;
+      padding-bottom: 45px;
+      color: #e3e3e3; }
+    #about #aboutContent p {
+      margin: 0;
+      color: #e3e3e3; }
+    #about #aboutContent a {
+      font-size: .9em;
+      text-align: center;
+      display: block;
+      width: 150px;
+      height: 38px;
+      background-color: #363636;
+      text-decoration: none;
+      border: 1px solid #e3e3e3;
+      color: #e3e3e3;
+      margin: 55px auto 0px auto;
+      padding-top: 12px;
+      -webkit-transition: 0.8s ease;
+      -moz-transition: 0.8s ease;
+      -ms-transition: 0.8s ease;
+      -o-transition: 0.8s ease;
+      transition: 0.8s ease; }
+      #about #aboutContent a:hover {
+        color: #363636;
+        border: 1px solid #363636;
+        background-color: #e3e3e3;
+        -webkit-transition: 0.8s ease;
+        -moz-transition: 0.8s ease;
+        -ms-transition: 0.8s ease;
+        -o-transition: 0.8s ease;
+        transition: 0.8s ease; }
+
+#contact {
+  width: 100%;
+  height: 375px;
+  background-color: #e3e3e3; }
+  #contact #contactContent {
+    text-align: center;
+    width: 50%;
+    float: left; }
+    #contact #contactContent #linkedInLogo {
+      width: 40px;
+      margin-top: 30px; }
+    #contact #contactContent h1 {
+      color: #141414; }
+  #contact #map {
+    height: 100%;
+    width: 50%;
+    float: left; }
+  #contact #holder {
+    clear: both; }
+
+.underline {
+  margin-bottom: 0px;
+  text-decoration: underline;
+  color: #141414; }
+
+.contactLinks {
+  text-decoration: none;
+  color: #141414;
+  filter: opacity(65%);
+  -webkit-filter: opacity(65%);
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -o-transition: 0.8s ease;
+  transition: 0.8s ease; }
+  .contactLinks:hover {
+    filter: opacity(100%);
+    -webkit-filter: opacity(100%);
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease; }
+
+#copyright {
+  height: 75px;
+  background-color: #141414;
+  text-align: center;
+  clear: both; }
+  #copyright p {
+    margin: 0;
+    padding-top: 28px;
+    color: #e3e3e3;
+    font-size: .7em; }
+
+@media screen and (max-width: 1000px) {
+  #about #aboutContent {
+    width: 85%; }
+  #contact {
+    height: auto; }
+    #contact #contactContent {
+      width: 100%;
+      padding-bottom: 45px; }
+    #contact #map {
+      height: 200px;
+      width: 100%; }
+    #contact #holder {
+      clear: both; }
+  .contactLinks {
+    filter: opacity(80%);
+    -webkit-filter: opacity(80%);
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease; }
+    .contactLinks:hover {
+      filter: opacity(80%);
+      -webkit-filter: opacity(80%);
+      -webkit-transition: 0.8s ease;
+      -moz-transition: 0.8s ease;
+      -ms-transition: 0.8s ease;
+      -o-transition: 0.8s ease;
+      transition: 0.8s ease; } }
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 20px; }
+  #landing img {
+    width: 65px;
+    height: 45px;
+    position: absolute;
+    top: 7%;
+    right: 5%; }
+  #landing #title {
+    position: absolute;
+    bottom: 2%;
+    left: 8%; }
+    #landing #title h1 {
+      margin-bottom: -30px;
+      font-size: 2.25em; }
+  #about #aboutContent a {
+    width: 125px;
+    height: 34px; } }

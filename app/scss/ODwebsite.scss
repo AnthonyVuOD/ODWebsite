@@ -1,0 +1,209 @@
+
+// Variables
+$primary-color: #e3e3e3; //light gray
+$secondary-color: #363636; // dark gray
+$tertiary-color: #141414; // light black
+
+@mixin transitionTime($time) {
+  -webkit-transition: $time ease;
+     -moz-transition: $time ease;
+      -ms-transition: $time ease;
+       -o-transition: $time ease;
+          transition: $time ease;
+}
+
+body{
+  // background-color: green;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 1.7em;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+#landing{
+  width:100%;
+  height:100vh;
+  background-color: red;
+  img {
+    width: 95px;
+    height: 65px;
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    -webkit-filter: drop-shadow(3px 4px 5px black);
+    -moz-filter: drop-shadow(3px 4px 5px black);
+    filter: drop-shadow(3px 4px 5px black);
+  }
+  #title{
+    position: absolute;
+    bottom: 3%;
+    left:15%;
+    h1{
+      margin-bottom: -35px;
+      font-size: 2.25em;
+    }
+  }
+}
+#about{
+  width:100%;
+  background-color: $secondary-color;
+  #aboutContent{
+    width: 60%;
+    // background-color: green;
+    margin: auto;
+    padding-bottom: 65px;
+    h1{
+      text-align: center;
+      padding-bottom: 45px;
+      color: $primary-color;
+    }
+    p{
+      margin:0;
+      color: $primary-color;
+    }
+    a{
+      font-size: .9em;
+      text-align: center;
+      display: block;
+      width: 150px;
+      height: 38px;
+      background-color: $secondary-color;
+      text-decoration: none;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      margin: 55px auto 0px auto;
+      padding-top: 12px;
+      @include transitionTime(.8s);
+      &:hover {
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        background-color: $primary-color;
+        @include transitionTime(.8s);
+      }
+    }
+  }
+}
+#contact{
+  width:100%;
+  height:375px;
+  background-color: $primary-color;
+  #contactContent{
+    text-align: center;
+    width: 50%;
+    float: left;
+    #linkedInLogo{
+      width: 40px;
+      margin-top: 30px;
+    }
+    h1{
+      color: $tertiary-color;
+    }
+  }
+  #map{
+    height: 100%;
+    width: 50%;
+    float: left;
+  }
+  #holder{
+    clear: both;
+  }
+}
+.underline {
+  margin-bottom: 0px;
+  text-decoration: underline;
+  color: $tertiary-color
+}
+.contactLinks{
+  text-decoration: none;
+  color: $tertiary-color;
+  filter: opacity(65%);
+  -webkit-filter: opacity(65%);
+  @include transitionTime(.8s);
+  &:hover {
+    filter: opacity(100%);
+    -webkit-filter: opacity(100%);
+    @include transitionTime(.8s);
+  }
+}
+#copyright{
+  height: 75px;
+  background-color: $tertiary-color;
+  text-align: center;
+  clear: both;
+  p{
+    margin:0;
+    padding-top: 28px;
+    color: $primary-color;
+    font-size: .7em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  #about{
+    #aboutContent{
+      width: 85%;
+    }
+  }
+  #contact{
+    height: auto;
+    #contactContent{
+      width: 100%;
+      padding-bottom: 45px;
+    }
+    #map{
+      height: 200px;
+      width: 100%;
+    }
+    #holder{
+      clear: both;
+    }
+  }
+  .contactLinks{
+    filter: opacity(80%);
+    -webkit-filter: opacity(80%);
+    @include transitionTime(.8s);
+    &:hover {
+      filter: opacity(80%);
+      -webkit-filter: opacity(80%);
+      @include transitionTime(.8s);
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 20px;
+  }
+  #landing{
+    img {
+      width: 65px;
+      height: 45px;
+      position: absolute;
+      top: 7%;
+      right: 5%;
+    }
+    #title{
+      position: absolute;
+      bottom: 2%;
+      left:8%;
+      h1{
+        margin-bottom: -30px;
+        font-size: 2.25em;
+      }
+    }
+  }
+  #about{
+    #aboutContent{
+      a{
+        width: 125px;
+        height: 34px;
+      }
+    }
+  }
+}
