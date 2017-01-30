@@ -7,26 +7,31 @@ body {
 h1 {
   font-size: 1.7em;
   font-family: 'Josefin Sans', sans-serif;
-  padding-top: 50px;
+  padding-top: 60px;
   margin: 0 auto; }
 
 #landing {
   width: 100%;
   height: 100vh;
-  background-color: red; }
+  background-image: url(../photos/glasses.jpg);
+  background-position: center;
+  background-size: cover; }
   #landing img {
-    width: 95px;
-    height: 65px;
+    width: 85px;
+    height: 60px;
     position: fixed;
-    top: 6%;
-    right: 6%;
+    top: 50px;
+    right: 65px;
+    z-index: 2;
     -webkit-filter: drop-shadow(3px 4px 5px black);
     -moz-filter: drop-shadow(3px 4px 5px black);
+    -ms-filter: drop-shadow(3px 4px 5px black);
     filter: drop-shadow(3px 4px 5px black); }
   #landing #title {
     position: absolute;
     bottom: 3%;
-    left: 15%; }
+    left: 15%;
+    color: #e3e3e3; }
     #landing #title h1 {
       margin-bottom: -35px;
       font-size: 2.25em; }
@@ -74,7 +79,7 @@ h1 {
 
 #contact {
   width: 100%;
-  height: 375px;
+  height: 385px;
   background-color: #e3e3e3; }
   #contact #contactContent {
     text-align: center;
@@ -100,16 +105,20 @@ h1 {
 .contactLinks {
   text-decoration: none;
   color: #141414;
-  filter: opacity(65%);
   -webkit-filter: opacity(65%);
+  -moz-filter: opacity(65%);
+  -ms-filter: opacity(65%);
+  filter: opacity(65%);
   -webkit-transition: 0.8s ease;
   -moz-transition: 0.8s ease;
   -ms-transition: 0.8s ease;
   -o-transition: 0.8s ease;
   transition: 0.8s ease; }
   .contactLinks:hover {
-    filter: opacity(100%);
     -webkit-filter: opacity(100%);
+    -moz-filter: opacity(100%);
+    -ms-filter: opacity(100%);
+    filter: opacity(100%);
     -webkit-transition: 0.8s ease;
     -moz-transition: 0.8s ease;
     -ms-transition: 0.8s ease;
@@ -129,7 +138,7 @@ h1 {
 
 @media screen and (max-width: 1000px) {
   #about #aboutContent {
-    width: 85%; }
+    width: 69%; }
   #contact {
     height: auto; }
     #contact #contactContent {
@@ -141,21 +150,15 @@ h1 {
     #contact #holder {
       clear: both; }
   .contactLinks {
-    filter: opacity(80%);
     -webkit-filter: opacity(80%);
-    -webkit-transition: 0.8s ease;
-    -moz-transition: 0.8s ease;
-    -ms-transition: 0.8s ease;
-    -o-transition: 0.8s ease;
-    transition: 0.8s ease; }
+    -moz-filter: opacity(80%);
+    -ms-filter: opacity(80%);
+    filter: opacity(80%); }
     .contactLinks:hover {
-      filter: opacity(80%);
       -webkit-filter: opacity(80%);
-      -webkit-transition: 0.8s ease;
-      -moz-transition: 0.8s ease;
-      -ms-transition: 0.8s ease;
-      -o-transition: 0.8s ease;
-      transition: 0.8s ease; } }
+      -moz-filter: opacity(80%);
+      -ms-filter: opacity(80%);
+      filter: opacity(80%); } }
 
 @media screen and (max-width: 750px) {
   body {
@@ -169,10 +172,20 @@ h1 {
   #landing #title {
     position: absolute;
     bottom: 2%;
-    left: 8%; }
+    left: 7%; }
     #landing #title h1 {
       margin-bottom: -30px;
       font-size: 2.25em; }
-  #about #aboutContent a {
-    width: 125px;
-    height: 34px; } }
+  #about #aboutContent {
+    width: 85%; }
+    #about #aboutContent a {
+      width: 125px;
+      height: 34px; } }
+
+@media screen and (max-width: 450px) {
+  #landing img {
+    width: 65px;
+    height: 45px;
+    position: absolute;
+    top: 3%;
+    right: 5%; } }
